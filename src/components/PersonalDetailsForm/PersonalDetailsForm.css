@@ -6,4 +6,9 @@
     color: #66b8fc;
     border-radius: 10px;
     padding: 20px;
-}
+    }
+
+    .personal-details-header {
+        font-weight: 700;
+        font-size: 25px;
+    }

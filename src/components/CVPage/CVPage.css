@@ -1,0 +1,15 @@
+.CVPage {
+    display: flex;
+    justify-content: center;
+    flex-basis: 600px;
+    background-color: #1F2833;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    }
+
+    .CV-content {
+        width: 550px;
+        aspect-ratio: 1 / 1.41;
+        background-color: white;
+    }
