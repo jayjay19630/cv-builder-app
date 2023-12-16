@@ -1,5 +1,6 @@
-import "./Header.css";
-function Header() {
+import "./PageHeader.css";
+
+function PageHeader() {
     return (
         <div className="header">
             <div className="left-header">
@@ -11,7 +12,7 @@ function Header() {
                 <button className="load-sample">Load Sample</button>
             </div>
         </div>
-    )
+    );
 }
 
-export default Header;
+export default PageHeader;
