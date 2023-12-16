@@ -3,21 +3,47 @@
     display: flex;
     height: 75px;
     width: 100%;
-    padding-left: 20px;
-    justify-content: left;
-    align-items: center;
-    gap: 10px;
-    position: fixed
+
+    justify-content: space-between;
+    position: fixed;
     }
 
-    .logo {
-        height: 70px;
-        width: 70px;
+    .left-header {
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
     }
 
-    .header-text {
-        color: #66b8fc;
-        font-weight: bold;
-        font-size: 20px;
-    }
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+
+        .header-text {
+            color: #66b8fc;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+    .right-header {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding-right: 100px;
+        }
+
+        button {
+            height: 30px;
+            width: 120px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .delete-content {
+            background-color: rgb(245, 89, 89);
+        }
+        .load-content {
+            background-color: grey;
+        }
 
