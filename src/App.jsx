@@ -3,17 +3,23 @@ import './App.css';
 import PersonalDetailsForm from './components/PersonalDetailsForm/PersonalDetailsForm.jsx';
 import PageHeader from './components/PageHeader/PageHeader';
 import CVPage from './components/CVPage/CVPage';
+import EducationSection from './components/EducationSection/EducationSection';
+import ExperienceSection from './components/ExperienceSection/ExperienceSection';
+import UserInput from './components/UserInput/UserInput';
+import Content from './components/Content/Content';
 
 function App() {
   return (
     <>
       <PageHeader></PageHeader>
-      <div className='content'>
-        <div className='user-input'>
+      <Content>
+        <UserInput>
           <PersonalDetailsForm></PersonalDetailsForm>
-        </div>
+          <EducationSection></EducationSection>
+          <ExperienceSection></ExperienceSection>
+        </UserInput>
         <CVPage></CVPage>
-      </div>
+      </Content>
     </>
   );
 }
