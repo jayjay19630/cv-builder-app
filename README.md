@@ -20,4 +20,4 @@ To get a local copy up and running, note the prerequisites and follow these step
 4. Run `cd cv-builder-app`
 5. Run `npm install`
 6. Run `npm run dev`
-7. Head over to http://localhost:5173/ to see the 8 ball in action!
+7. Head over to http://localhost:5173/ to create your own CV!
