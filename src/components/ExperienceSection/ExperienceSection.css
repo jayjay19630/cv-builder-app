@@ -10,6 +10,12 @@
     width: 325px;
     }
 
+    .divider {
+        height: 2px;
+        width: 325px;
+        background-color: rgb(17, 24, 31);
+    }
+
     .experience-header {
         font-weight: 700;
         font-size: 25px;

@@ -1,6 +1,7 @@
 .experience-list {
     list-style-type: none;
     padding-left: 0;
+    padding-top: 0;
 }
 
     li {
@@ -8,5 +9,12 @@
         flex-direction: column;
         gap: 10px;
         padding-bottom: 30px;
+    }
+
+    .divider {
+        margin-top: 20px;
+        height: 2px;
+        width: 325px;
+        background-color: rgb(17, 24, 31);
     }
     

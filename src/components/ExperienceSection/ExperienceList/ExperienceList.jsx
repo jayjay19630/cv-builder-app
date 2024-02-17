@@ -15,6 +15,7 @@ export const ExperienceList = (props) => {
                     <SingleFormInput formTitle={"Company"} placeholder="Company"></SingleFormInput>
                     <SingleFormInput formTitle={"Start Date"} placeholder="Start Date"></SingleFormInput>
                     <SingleFormInput formTitle={"End Date"} placeholder="End Date"></SingleFormInput>
+                    <div className="divider"></div>
                 </li>
             )}
         </ul>
