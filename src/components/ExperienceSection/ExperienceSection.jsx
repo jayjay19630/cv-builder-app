@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./ExperienceSection.css";
 import { ExperienceList } from "./ExperienceList/ExperienceList";
-import { ExperienceEdit } from "./ExperienceEdit/ExperienceEdit";
 
-function ExperienceSection() {
-  const [experienceData, setExperienceData] = useState(null);
+function ExperienceSection(props) {
+  const experienceData = props.experienceData;
+  const setExperienceData = props.setExperienceData;
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -30,7 +30,7 @@ function ExperienceSection() {
       ></ExperienceList>
       {!open && (
         <>
-          <div className="add-new-experience">Add a new experience</div>
+          <div className="add-new-experience">Add a new work experience!</div>
           <button className="add-button" onClick={handleClick}>
             +
           </button>

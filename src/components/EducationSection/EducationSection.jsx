@@ -2,8 +2,9 @@ import { useState } from "react";
 import "./EducationSection.css";
 import { EducationList } from "./EducationList/EducationList";
 
-function EducationSection() {
-  const [educationData, setEducationData] = useState(null);
+function EducationSection(props) {
+  const educationData = props.educationData;
+  const setEducationData = props.setEducationData;
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {

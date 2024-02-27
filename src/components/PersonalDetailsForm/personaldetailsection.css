@@ -1,0 +1,35 @@
+.personal-section {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #1f2833;
+  color: #66b8fc;
+  border-radius: 10px;
+  padding: 20px;
+  height: min-content;
+  width: 325px;
+}
+
+.divider {
+  height: 2px;
+  width: 325px;
+  background-color: rgb(17, 24, 31);
+}
+
+.personal-header {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+}
+
+.add-new-personal {
+  align-self: center;
+  text-align: center;
+}
+
+.add-button {
+  align-self: center;
+  width: 200px;
+  background-color: rgb(189, 227, 233);
+  font-size: 24px;
+}
