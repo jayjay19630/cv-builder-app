@@ -1,29 +1,30 @@
 .education-section {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color: #1f2833;
-    color: #66b8fc;
-    border-radius: 10px;
-    padding: 20px;
-    height: min-content;
-    width: 325px;
-    }
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #1f2833;
+  color: #66b8fc;
+  border-radius: 10px;
+  padding: 20px;
+  height: min-content;
+  width: 325px;
+}
 
-    .education-header {
-        font-weight: 700;
-        font-size: 25px;
-        text-align: left;
-    }
+.education-header {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+  padding-bottom: 0;
+}
 
-    .add-new-education {
-        align-self: center;
-        text-align: center;
-    }
-    
-    .add-button {
-        align-self: center;
-        width: 200px;
-        background-color: rgb(189, 227, 233);
-        font-size: 24px;
-    }
+.add-new-education {
+  align-self: center;
+  text-align: center;
+}
+
+.add-button {
+  align-self: center;
+  width: 200px;
+  background-color: rgb(189, 227, 233);
+  font-size: 24px;
+}
