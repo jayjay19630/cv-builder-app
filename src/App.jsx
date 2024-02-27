@@ -32,7 +32,11 @@ function App() {
             setExperienceData={setExperienceData}
           ></ExperienceSection>
         </UserInput>
-        <CVPage></CVPage>
+        <CVPage
+          personalData={personalData}
+          educationData={educationData}
+          experienceData={experienceData}
+        ></CVPage>
       </Content>
     </>
   );

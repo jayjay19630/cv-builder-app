@@ -1,15 +1,74 @@
 .CVPage {
-    display: flex;
-    justify-content: center;
-    flex-basis: 600px;
-    background-color: #1F2833;
-    border-radius: 10px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    }
+  display: flex;
+  justify-content: center;
+  flex-basis: 600px;
+  max-height: 1200px;
+  background-color: #1f2833;
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
-    .CV-content {
-        width: 550px;
-        aspect-ratio: 1 / 1.41;
-        background-color: white;
-    }
+.CV-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  max-height: 1200px;
+  aspect-ratio: 1 / 1.41;
+  background-color: white;
+
+  .education-data,
+  .experience-data {
+    width: 500px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .school {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .major {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .secondary {
+    display: flex;
+    font-weight: 100;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+}
+
+.divider {
+  height: 2px;
+  width: 1000px;
+  background-color: rgb(17, 24, 31);
+}
+
+.personal-data {
+  flex-direction: column;
+  height: 60px;
+  margin-top: 30px;
+  align-items: center;
+  gap: 15px;
+
+  .name {
+    font-weight: bold;
+    font-size: 30px;
+    text-align-last: center;
+  }
+
+  .email-and-number,
+  .address {
+    align-self: center;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    font-size: small;
+    color: rgb(115, 114, 112);
+  }
+}
