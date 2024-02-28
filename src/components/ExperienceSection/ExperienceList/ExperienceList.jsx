@@ -3,13 +3,16 @@ import "./experiencelist.css";
 import SingleFormInput from "../../ui/SingleFormInput/SingleFormInput";
 
 export const ExperienceList = (props) => {
-  const experienceData = props.experienceData;
   const setExperienceData = props.setExperienceData;
-  if (experienceData === null) {
-    return <></>;
-  }
+
   const onDelete = () => {
-    setExperienceData(null);
+    setExperienceData({
+      occupation: "",
+      location: "",
+      company: "",
+      startDate: "",
+      endDate: "",
+    });
     props.setOpen(false);
   };
 
@@ -24,12 +27,6 @@ export const ExperienceList = (props) => {
     setExperienceData((prevData) => ({
       ...prevData,
       location: e.target.value,
-    }));
-  };
-  const onMajorChange = (e) => {
-    setExperienceData((prevData) => ({
-      ...prevData,
-      major: e.target.value,
     }));
   };
   const onCompanyChange = (e) => {
@@ -52,7 +49,7 @@ export const ExperienceList = (props) => {
   };
 
   return (
-    <ul className="experience-list">
+    <div className="experience-list">
       <div className="experience-list-item">
         <SingleFormInput
           formTitle={"Occupation"}
@@ -94,6 +91,6 @@ export const ExperienceList = (props) => {
           Delete
         </Button>
       </div>
-    </ul>
+    </div>
   );
 };

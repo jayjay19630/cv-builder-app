@@ -22,11 +22,14 @@ function PersonalDetailSection(props) {
     <form className="personal-section">
       <div className="personal-header">Personal Details</div>
       <div className="divider"></div>
-      <PersonalDetailsForm
-        personalData={personalData}
-        setPersonalData={setPersonalData}
-        setOpen={setOpen}
-      ></PersonalDetailsForm>
+      {open && (
+        <PersonalDetailsForm
+          personalData={personalData}
+          setPersonalData={setPersonalData}
+          setOpen={setOpen}
+        ></PersonalDetailsForm>
+      )}
+
       {!open && (
         <>
           <div className="add-new-personal">Add Personal Information!</div>

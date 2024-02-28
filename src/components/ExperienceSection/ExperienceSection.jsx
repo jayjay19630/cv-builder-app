@@ -23,11 +23,14 @@ function ExperienceSection(props) {
     <form className="experience-section">
       <div className="experience-header">Experience</div>
       <div className="divider"></div>
-      <ExperienceList
-        experienceData={experienceData}
-        setExperienceData={setExperienceData}
-        setOpen={setOpen}
-      ></ExperienceList>
+      {open && (
+        <ExperienceList
+          experienceData={experienceData}
+          setExperienceData={setExperienceData}
+          setOpen={setOpen}
+        ></ExperienceList>
+      )}
+
       {!open && (
         <>
           <div className="add-new-experience">Add a new work experience!</div>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import PersonalDetailsForm from "./components/PersonalDetailsForm/PersonalDetailsForm/PersonalDetailsForm.jsx";
 import PageHeader from "./components/PageHeader/PageHeader";
 import CVPage from "./components/CVPage/CVPage";
 import EducationSection from "./components/EducationSection/EducationSection";
@@ -10,9 +9,27 @@ import Content from "./components/Content/Content";
 import PersonalDetailSection from "./components/PersonalDetailsForm/PersonalDetailSection.jsx";
 
 function App() {
-  const [personalData, setPersonalData] = useState(null);
-  const [educationData, setEducationData] = useState(null);
-  const [experienceData, setExperienceData] = useState(null);
+  const [personalData, setPersonalData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    address: "",
+  });
+  const [educationData, setEducationData] = useState({
+    school: "",
+    location: "",
+    major: "",
+    education: "",
+    startDate: "",
+    endDate: "",
+  });
+  const [experienceData, setExperienceData] = useState({
+    occupation: "",
+    location: "",
+    company: "",
+    startDate: "",
+    endDate: "",
+  });
 
   return (
     <>

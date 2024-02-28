@@ -4,12 +4,16 @@ import "./educationlist.css";
 
 export const EducationList = (props) => {
   const setEducationData = props.setEducationData;
-  if (props.educationData === null) {
-    return <></>;
-  }
 
   const onDelete = () => {
-    props.setEducationData(null);
+    props.setEducationData({
+      school: "",
+      location: "",
+      major: "",
+      education: "",
+      startDate: "",
+      endDate: "",
+    });
     props.setOpen(false);
   };
 

@@ -4,12 +4,14 @@ import "./PersonalDetailsForm.css";
 
 const PersonalDetailsForm = (props) => {
   const setPersonalData = props.setPersonalData;
-  if (props.personalData === null) {
-    return <></>;
-  }
 
   const onDelete = () => {
-    setPersonalData(null);
+    setPersonalData({
+      fullName: "",
+      email: "",
+      phoneNumber: "",
+      address: "",
+    });
     props.setOpen(false);
   };
 

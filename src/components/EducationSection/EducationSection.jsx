@@ -24,12 +24,13 @@ function EducationSection(props) {
     <form className="education-section">
       <div className="education-header">Education</div>
       <div className="divider"></div>
-      <EducationList
-        educationData={educationData}
-        setEducationData={setEducationData}
-        setOpen={setOpen}
-      />
-
+      {open && (
+        <EducationList
+          educationData={educationData}
+          setEducationData={setEducationData}
+          setOpen={setOpen}
+        />
+      )}
       {!open && (
         <>
           <div className="add-new-education">
